@@ -2,10 +2,100 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=git, initial-scale=1.0">
-    <title>Document</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>Le Geek</title>
 </head>
 <body>
-    
+    <nav class="nav">
+        <ul class="nav-list">
+            <li class="active">
+                <i class='bx bx-home-alt'></i>
+                <span class="tooltip">Home</span>
+            </li>
+            <li>
+                <i class='bx bx-user'></i>
+                <span class="tooltip">Accueil</span>
+            </li>
+            <li>
+                <i class='bx bx-comment-detail'></i>
+                <span class="tooltip">Resume</span>
+            </li>
+            <li>
+                <i class='bx bxs-briefcase-alt-2'></i>
+                <span class="tooltip">Portfolio</span>
+            </li>
+            <li>
+                <i class='bx bx-envelope-open'></i>
+                <span class="tooltip">Contact</span>
+            </li>
+        </ul>
+    </nav>
+    <div class="container">
+        <div class="box">
+            <section class="section home">
+                <div class="info">
+                    <h3>Hello, je suis</h3>
+                    <h1>Sidi TALL</h1>
+                    <h3>Développeur front-end</h3>
+                    <p class="desc">Passionné par l'informatique depuis mon enfance, j'aspire à révolutionner ce domaine.</p>
+                    <div class="btn-sci">
+                        <a href="#" class="btn">Télécharger mon CV</a>
+                        <div class="sci">
+                            <a href="#">
+                                <i class='bx bxl-github'></i>
+                                <span class="tooltip">Github</span>
+                            </a>
+                            <a href="#">
+                                <i class='bx bxl-linkedin'></i>
+                                <span class="tooltip">LinkedIn</span>
+                            </a>
+                            <a href="#">
+                                <i class='bx bxl-facebook'></i>
+                                <span class="tooltip">Facebook</span>
+                            </a>
+                            <a href="#">
+                                <i class='bx bxl-instagram'></i>
+                                <span class="tooltip">Instagram</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="img-wrapper">
+                    <div class="img-box home-img">
+                        <img src="ta.jpg" alt="">
+                    </div>
+                </div>
+            </section>
+            <section class="section about">
+                <div class="img-wrapper">
+                    <div class="img-box about-img">
+                        <img src="ta.jpg" alt="">
+                    </div>
+                </div>
+                <div class="about-info">
+                    <h2 class="title">A propos de moi</h2>
+                    <h3>Développeur front-end</h3>
+                    <p class="desc">Passionné par l'informatique depuis mon enfance, j'aspire à révolutionner ce domaine</p>
+                    <a href="#" class="btn">Voir plus</a>
+                </div>
+            </section>
+            <section class="section resume">
+                <h2 class="title">Resume</h2>
+                <div class="tab-box">
+                    <div class="tab-list resume-list">
+                        <h3>Experiences</h3>
+                    </div>
+                    <div class="tab-list resume-list">
+                        <h3>Formations</h3>
+                    </div>
+                    <div class="tab-list resume-list">
+                        <h3>Educations</h3>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
 </body>
 </html>
