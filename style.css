@@ -113,10 +113,10 @@ a:hover .tooltip {
     position: relative;
     width: 100%;
     height: 100%;
-    transform-style: preserve-3d;
+    transform-style: preserve-3d; 
     transform-origin: 50% 50% -50vw;
     transition: transform 1s; /* Smooth transition for rotation */
-    transform: rotateY(0deg);
+    transform: rotateY(-90deg);
 }
 
 .section {
@@ -130,9 +130,11 @@ a:hover .tooltip {
 
 .section:nth-child(even) {
     background: var(--second-bg-color);
+ }
+
+.section.about{
+    transform: translateX(50vw) translateZ(-50vw)rotateY(90deg);
 }
-
-
 
 .home,
 .about,
@@ -261,7 +263,7 @@ a:hover .tooltip {
 }
 
 .tab-box {
-    display: flex;
+     display: flex;
     flex-direction: column;
     gap: 2rem;
 }
