@@ -1,0 +1,1 @@
+const resumeLists = document.querySelectorAll(".resume-list")
