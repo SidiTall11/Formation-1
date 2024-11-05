@@ -372,10 +372,14 @@ a:hover .tooltip {
     color:var(--main-color);
     font-weight: 400;
 }
+
+/*Modifier*/
 .resume-item h4:nth-child(3){
     position: relative;
+    text-align: center;/*Ajouter pour pouvoir centrer les noms d'Universités au niveau de education*/
     color: var(--white-color);
     margin-left: 2rem;
+    margin-top: 0.5rem;
 }
 .resume-item h4:nth-child(3)::before{
     content: '';
@@ -389,5 +393,76 @@ a:hover .tooltip {
     border-radius: 50%;
 }
 .resume-item p{
+    margin-top: 1.5rem;
+}
+
+
+
+/* Section Ajouter pour pouvoir Aligner à droite les noms d'entreprise au niveau de experience*/
+
+.resume-item.active2 h4:nth-child(3){ /*Ajout de "active2" pour pouvoir selectionner les noms d'entreprise au niveau de experience */
+    position: relative; 
+    text-align: left;/*Ajouts "align-items:left" */
+    color: var(--white-color);
+    margin-left: 2rem;
+    margin-top: 0.5rem;
+}
+
+
+
+/* Section Ajouter pour pouvoir bien positionner le puce bleu  au niveau de education*/
+
+.resume-item.active h4:nth-child(3)::before{ /*Ajout de "active" pour pouvoir selectionner certains noms d'université au niveau de education*/
+    content: '';
+    position: absolute;
+    left: 5rem;/*Modifier de -2rem à 5rem afin de bien positionner le pouce bleu*/
+    top: 50%;
+    transform: translateY(-50%);
+    width: 1rem;
+    height:1rem;
+    background: var(--main-color);
+    border-radius: 50%;
+}
+
+
+.resume-item.active1 h4:nth-child(3)::before{ /*Ajout de "active1" pour pouvoir selectionner certains noms d'université au niveau de education*/
+    content: '';
+    position: absolute;
+    left: 4rem; /*Modifier de -2rem à 4rem afin de bien positionner le pouce bleu*/
+    top: 50%;
+    transform: translateY(-50%);
+    width: 1rem;
+    height:1rem;
+    background: var(--main-color);
+    border-radius: 50%;
+}
+
+
+.resume-item p{
     margin-top: 1rem;
 }
+
+.resume-box.skills {
+
+    grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
+
+}
+
+.resume-box.skills .resume-item {
+  
+    align-items: center;
+
+}
+
+.resume-box.skills .resume-item i{
+  
+    font-size: 8rem;
+   
+}
+
+.resume-box.skills .resume-item p {
+
+margin-top: 0;
+
+}
+
