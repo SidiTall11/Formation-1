@@ -281,6 +281,7 @@ a:hover .tooltip {
 .img-box.about-img{
 
     z-index:1;
+    z-index:1;
 }
 .title{
     font-size: 4rem;
@@ -312,12 +313,14 @@ a:hover .tooltip {
     margin-top: 1rem;
     margin-bottom: 2rem;
      
+     
 }
 
 .tab-list{
     display: flex;
     align-items: center;
     width: 100%;
+    border-bottom: .3rem solid var(--tab-list-color);
     border-bottom: .3rem solid var(--tab-list-color);
     cursor:pointer;
     color: var(--tab-list-color);
